@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    hridaywebapp:
+      image: hridaywebapp:appv1
+      build: .
+      container_name: hridaywebc1
+      ports:
+        - 9999:80
+      restart: always
